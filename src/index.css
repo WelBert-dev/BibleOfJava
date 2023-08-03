@@ -1,13 +1,607 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --main-color: rgb(13 159 13) !important;
+  --second-color: black !important;
+  --main-fontFamily: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji !important;
+  --main-titleColor: #2f81f7 !important;
+  --main-textColor: #d1d5db !important;
+  --main-fontfamily-Press2PLight: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
+  --main-bgColorLightGrey: lightgrey;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.-linkBoldYellow {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.-BoldYellow {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 68%;
+  overflow-x: hidden;
+
+  --tw-bg-opacity: 1;
+  background-color: #000;
+}
+
+main {
+  padding-bottom: 1rem;
+}
+/* ProjectsScreen Área ( Códigos veem do projeto inicial do meu Portfólio )  */
+
+#main-projects--container {
+  width: 100%;
+}
+
+.projects-single {
+  display: flex;
+  gap: .2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projects-logo {
+  border: 4px ridge #000;
+  height: 100%;
+  width: 100%;
+  margin-bottom: -4px !important;
+}
+
+.projects-right {
+  border-radius: 10px;
+  /* background: linear-gradient(90deg,#fff 0,6%,#2f9919,#267b15); antigamente, ruim pois força vista*/ 
+  --tw-bg-opacity: .5;
+  background-color: rgba(52,53,65,var(--tw-bg-opacity));
+
+  max-width: 800px;
+  border-left: 2px ridge lightgrey;
+  border-right: 2px ridge lightgrey;
+
+}
+
+.projects-title--container {
+  background-color: #0d1117;
+  border: 2px ridge lightgrey;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 .5rem .5rem .5rem;
+  cursor: default;
+}
+
+.projects-title--container > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.projects-title--container > span {
+  font-weight: bold;
+  /* color: #ffd700; */
+  color: #11e8ff;
+  text-shadow: 1px 1px black;
+  font-size: .9rem;
+  background-color: #000;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 2px auto 0 auto;
+}
+
+.projects-title {
+  padding: 1rem 0 .6rem 2rem;
+  font-size: .9rem;
+  font-family: 'press start 2p';
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 2px #000;
+  margin: 0 auto;
+  line-height: 1rem;
+  
+}
+
+.projects-title--container div a {
+  color: #fff;
+  padding: .2rem;
+  font-size: 1.5rem;
+  height: fit-content;
+  width: fit-content;
+  transition: all ease-in .3s;
+}
+
+.projects-title--container div a i svg path, .projects-title--container div a i svg, .projects-title--container div a i{
+  height: fit-content;
+  width: fit-content;
+}
+
+.projects-title--container div a:hover {
+  color:  #11e8ff;
+  transform: scale(1.1);
+}
+
+.projects-title--container p {
+  font-family: var(--main-fontFamily);
+  text-align: center;
+  font-size: .9rem;
+  color: white;
+  text-decoration: underline;
+  padding: 0 0 .2rem 0;
+}
+
+.projects-subtitle {
+  font-family: 'press start 2p';
+  color: var(--main-titleColor);
+  font-size: .8rem;
+  text-shadow: 1px 2px 2px black;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.projects-description--container {
+  margin: 0 .5rem;
+  font-family: var(--main-fontFamily);
+  color: var(--main-textColor);
+  list-style-type: none;
+  text-align: justify;
+}
+
+.projects-description--container ul {
+  list-style-type: square;
+  list-style-position: inside;
+  font-size: .9rem;
+}
+
+.projects-description--container ul li::marker{
+  color: #1877ff;
+}
+
+.projects-description--container ul li{
+  margin-bottom: .5rem;
+}
+
+/* .projects-subdescription--container {
+  margin: 0 1rem 1rem 1rem;
+} */
+
+.projects-subdescription--container p {
+  color: var(--main-textColor);
+  font-size: .9rem;
+  text-align: justify;
+  font-family: var(--main-fontFamily);
+  line-height: 1.2rem;
+  margin: 0 .5rem;
+}
+
+.wrapper-projects hr {
+  margin: 1rem;
+}
+
+.subContainer-bottom {
+  border: 4px ridge #000;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-bottom: .5rem;
+}
+
+.-spanOfLinkAkitaDesbAlgTwitter {
+  display: block;
+  font-size: .8rem;
+  font-family: var(--main-fontFamily);
+  color: #11e8ff;
+  margin: 3px 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px black;
+}
+
+a.-linkBoldYellowProjects {
+  color: #ffd700;
+  font-weight: bold;
+  font-size: .7rem;
+}
+
+code.token_reservada.--dateOfImplementation {
+  font-size: .9rem;
+  margin: 3px 0;
+}
+
+@media (max-width: 810px)
+{
+  .projects-title {
+      font-size: .8rem;     
+  }
+  .projects-title--container p {
+      font-size: .7rem;
+  }
+  
+  .projects-subtitle {
+      font-size: .8rem;
+  }
+  
+  .projects-description--container {
+      font-size: .7rem;
+  }
+
+  /* .projects-subdescription--container p {
+      max-width: 90%;
+  } */
+
+  .projects-logo {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  
+  .projects-right {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+}
+
+@media (max-width: 425px)
+{
+  .projects-title {
+      font-size: .7rem;     
+  }
+  .projects-title--container div a {
+      font-size: 1.3rem;
+  }
+  .projects-title--container p {
+      font-size: .7rem;
+  }
+  
+  .projects-subtitle {
+      font-size: .7rem;
+  }
+  
+  .projects-description--container {
+      font-size: .6rem;
+  }
+
+  .projects-subdescription--container p {
+      font-size: .8rem;
+      /* max-width: 90%; */
+  }
+  .projects-description--container ul {
+      font-size: .8rem;
+  }
+  .projects-title--container > span {
+      font-size: .8rem;
+  }
+
+  a.-linkBoldYellowProjects {
+      color: #ffd700;
+      font-weight: bold;
+      font-size: .6rem;
+  }
+
+  #main-projects--container {
+      padding-right: 0px;
+  }
+
+  code.token_reservada.--dateOfImplementation {
+      font-size: .7rem;
+  }
+}
+
+
+/* JavaBible Área ( Códigos veem do projeto inicial do meu Portfólio ) */
+
+code.token_reservada {
+  background-color: #c6c6c6;
+  font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
+  color: red;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 0 2px;
+  font-size: .8rem;
+  text-shadow: none;
+}
+
+ul.-nestedInnerUl {
+  margin: .5rem 0 0 .5rem;
+  list-style-type: disc;
+}
+
+ul.-nestedInnerUl li::marker {
+  color: red;
+}
+
+li code.-main-moduleTitleLi {
+  font-size: .9rem;
+}
+
+code.outputResult {
+  background-color: #200a1c;
+  font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: 0 2px;
+  font-size: .8rem;
+  text-shadow: 1px 1px 3px #000;
+}
+
+.-nestedInnerCode {
+  margin: 0 0 0 1rem;
+  font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
+}
+
+.-nestedInnerCode.--2Identation {
+  margin: 0 0 0 2rem;
+}
+
+.-nestedInnerCode.--3Identation {
+  margin: 0 0 0 3rem;
+}
+
+.-nestedInnerCode.--4Identation {
+  margin: 0 0 0 4rem;
+}
+
+.-nestedInnerCode.--5Identation {
+  margin: 0 0 0 5rem;
+}
+
+code.-tokenMethod {
+  color: #d2a8ff;
+  font-size: .8rem;
+}
+
+code.-tokenString {
+  color: #a5d6ff;
+  font-size: .8rem;
+}
+
+code.-tokenKeyword {
+  color: #ff7b72;
+  font-size: .8rem;
+}
+
+code.-tokenKeyConstant {
+  color: #79c0ff;
+  font-size: .8rem;
+}
+
+code.-tokenClassEntity {
+  color: #cdcdcd;
+  font-size: .8rem;
+}
+
+span.-tokenComment {
+  color: #00d000;
+  font-weight: 400;
+}
+
+code.-tokenInterfaceEntity {
+  color: #6ebc6e;
+  font-size: .8rem;
+}
+
+code.-tokenAnnotationsEntity {
+  color: #d7d01c;
+  font-size: .8rem;
+}
+
+ul.main-implementFullBlock--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: .5rem 0 0 .5rem;
+}
+
+code.implementFullBlock {
+  background-color: #200a1c;
+  font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace!important;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  padding: .5rem;
+  font-size: .9rem;
+  text-shadow: 1px 1px 3px #000;
+  line-height: 1rem;
+  text-align: left;
+  width: 100%;
+  border: 3px double #000;
+}
+
+p.main-title--implementFullBlock {
+  margin-top: .5rem;
+  margin-left: .5rem;
+  display: list-item;
+  list-style: disc;
+  list-style-position: inside;
+  color: wheat;
+}
+
+p.main-title--implementFullBlock::marker {
+  color: red;
+}
+
+span.outputResult--implementFullBlock {
+  background-color: black;
+  color: #11e8ff;
+  font-weight: bolder;
+  display: block;
+  text-align: center;
+  border-radius: 4px;
+  border: 3px double #044910;
+  padding: 2px;
+}
+
+ul.projects-frontend--container > li.-marginNone--inMobile > p {
+  margin-left: .5rem;
+  display: list-item;
+  list-style-type: square;
+}
+
+ul.projects-frontend--container > li.-marginNone--inMobile > p:nth-child(even) {
+  list-style-type: disc;
+}
+
+ul.projects-frontend--container > li.-marginNone--inMobile > p.-listItem--inMobile {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul.projects-frontend--container > li.-marginNone--inMobile > p.-listItem--inMobile::marker {
+  color: #1877ff;
+  margin-right: 0;
+}
+
+ul.projects-frontend--container > li.-marginNone--inMobile {
+  list-style-type: none;
+}
+
+pre.pre-implementFullBlock {
+  display: inline-block;
+  font-size: .8rem;
+}
+
+.--fontSize1rem {
+  font-size: 1rem !important;
+}
+
+.--fontSize1Dot5rem {
+  font-size: 1.5rem !important;
+}
+
+ul.javaBible-listOfTitle--container {
+  font-family: var(--main-fontFamily);
+  color: #7b83da;
+  font-weight: 500;
+  font-size: .8rem;
+  list-style-position: inside;
+  line-height: 1rem;
+  text-shadow: 1px 1px 3px black;
+  list-style-type: square;
+}
+
+ul.javaBible-listOfTitle--container li::marker {
+  color: white;
+}
+
+@media (max-width: 810px)
+{
+  code.token_reservada {
+      font-size: .7rem;
+  }
+
+  ul.projects-description--container {
+      margin: 0;
+  }
+
+  ul.projects-description--container > li > h3 {
+      margin-left: .5rem;
+      margin-right: .5rem;
+  }
+
+  ul.projects-frontend--container > li {
+      margin-left: .5rem;
+      margin-right: .5rem;
+  }
+  
+  ul.projects-frontend--container > li.-marginNone--inMobile {
+      margin-left: 0;
+      margin-right: 0;
+  }
+
+  ul.projects-frontend--container > li.-marginNone--inMobile > p {
+      margin-left: .5rem;
+      margin-right: .5rem;
+  }
+
+  ul.projects-frontend--container > li.-marginNone--inMobile > p.-listItem--inMobile {
+      margin-left: .5rem;
+      margin-right: .5rem;
+  }
+
+  ul.main-implementFullBlock--container {
+      margin: 0.5rem 0 0 0;
+  }
+}
+
+@media (max-width: 425px)
+{
+  code.token_reservada {
+      font-size: .6rem;
+      padding: 0 1.5px;
+      border-radius: 4px;
+  }
+
+  ul.-nestedInnerUl {
+      margin: 0.5rem 0;
+  }
+  
+  li code.-main-moduleTitleLi {
+      font-size: .6rem;
+  }
+
+  /* Área da caixa de exemplo de códigos */
+
+  code.-tokenMethod {
+      font-size: .6rem;
+  }
+  
+  code.-tokenString {
+      font-size: .6rem;
+  }
+  
+  code.-tokenKeyword {
+      font-size: .6rem;
+  }
+  
+  code.implementFullBlock {
+      font-size: .6rem;
+      text-shadow: 1px 1px 3px #000;
+      line-height: 1rem;
+      padding: 0.2rem 0 0.2rem 0.2rem;
+  }
+
+  code.outputResult {
+      font-size: .6rem;
+  }
+
+  code.-tokenKeyConstant {
+      font-size: .6rem;
+  }
+  
+  code.-tokenClassEntity {
+      font-size: .6rem;
+  }
+
+  span.-tokenComment {
+      font-size: .6rem;
+  }
+
+  code.-tokenInterfaceEntity {
+      font-size: .6rem;
+  }
+
+  code.-tokenAnnotationsEntity {
+      font-size: .6rem;
+  }
+
+  p.main-title--implementFullBlock {
+      margin-left: 0rem;
+  }
+
+  pre.pre-implementFullBlock {
+      font-size: .6rem;
+  }
 }
