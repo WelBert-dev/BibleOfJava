@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.3f5ef482.css",
-    "main.js": "/static/js/main.49aa5e50.js",
+    "main.css": "/static/css/main.081fd16c.css",
+    "main.js": "/static/js/main.8bfa2f63.js",
     "static/media/Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO MUNDO _ NERD HITS.mp3": "/static/media/Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO MUNDO _ NERD HITS.9a64b4ab0bb787a692a6.mp3",
     "static/media/Rap dos Hokages (Naruto) - A VONTADE DO FOGO _ NERD HITS.mp3": "/static/media/Rap dos Hokages (Naruto) - A VONTADE DO FOGO _ NERD HITS.06f832336e73e946e7a0.mp3",
     "static/media/Rap do Itachi (Naruto) _ Tauz RapTributo 18.mp3": "/static/media/Rap do Itachi (Naruto) _ Tauz RapTributo 18.692d028d8c34df232c45.mp3",
@@ -78,12 +78,13 @@
     "static/media/poo-java-cover.png": "/static/media/poo-java-cover.fc74b8982e6f8eb586d9.png",
     "static/media/maratonaJavaDevDojoLogo.jpg": "/static/media/maratonaJavaDevDojoLogo.a73b27454d611a434feb.jpg",
     "static/media/hierarchy-of-java-exceptions.webp": "/static/media/hierarchy-of-java-exceptions.120288d7317b65bab6fe.webp",
+    "static/media/java-wrapper-class-hierarchy.webp": "/static/media/java-wrapper-class-hierarchy.72c3465c137b38623d02.webp",
     "index.html": "/index.html",
-    "main.3f5ef482.css.map": "/static/css/main.3f5ef482.css.map",
-    "main.49aa5e50.js.map": "/static/js/main.49aa5e50.js.map"
+    "main.081fd16c.css.map": "/static/css/main.081fd16c.css.map",
+    "main.8bfa2f63.js.map": "/static/js/main.8bfa2f63.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f5ef482.css",
-    "static/js/main.49aa5e50.js"
+    "static/css/main.081fd16c.css",
+    "static/js/main.8bfa2f63.js"
   ]
 }
