@@ -40,6 +40,7 @@ body {
 
 main {
   padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 /* ProjectsScreen Área ( Códigos veem do projeto inicial do meu Portfólio )  */
 
@@ -106,13 +107,14 @@ main {
 
 .projects-title {
   padding: 1rem 0 .6rem 2rem;
-  font-size: .9rem;
+  font-size: .8rem;
   font-family: 'press start 2p';
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 2px #000;
   margin: 0 auto;
   line-height: 1rem;
+  font-weight: lighter;
   
 }
 
@@ -150,6 +152,7 @@ main {
   font-size: .8rem;
   text-shadow: 1px 2px 2px black;
   padding: 1rem 1rem 1rem 0;
+  font-weight: lighter;
 }
 
 .projects-description--container {
@@ -222,14 +225,14 @@ code.token_reservada.--dateOfImplementation {
 @media (max-width: 810px)
 {
   .projects-title {
-      font-size: .8rem;     
+      font-size: .7rem;     
   }
   .projects-title--container p {
       font-size: .7rem;
   }
   
   .projects-subtitle {
-      font-size: .8rem;
+      font-size: .7rem;
   }
   
   .projects-description--container {
@@ -254,7 +257,7 @@ code.token_reservada.--dateOfImplementation {
 @media (max-width: 425px)
 {
   .projects-title {
-      font-size: .7rem;     
+      font-size: .6rem;     
   }
   .projects-title--container div a {
       font-size: 1.3rem;
@@ -264,7 +267,7 @@ code.token_reservada.--dateOfImplementation {
   }
   
   .projects-subtitle {
-      font-size: .7rem;
+      font-size: .6rem;
   }
   
   .projects-description--container {

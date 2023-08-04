@@ -8,6 +8,7 @@ import App from './App';
 import SummaryScreen from './screens/summaryScreen/SummaryScreen';
 import ObjectOrientedProgrammingOverviewScreen from './screens/objectOrientedProgrammingOverviewScreen/ObjectOrientedProgrammingOverviewScreen';
 import ExceptionsRuntimeExceptionsAndErrorsScreen from './screens/exceptionsRuntimeExceptionsAndErrorsScreen/ExceptionsRuntimeExceptionsAndErrorsScreen';
+import WrappersOfPrimitiveTypesScreen from './screens/wrappersOfPrimitiveTypesScreen/WrappersOfPrimitiveTypesScreen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,8 +19,8 @@ root.render(
             <Route path="/" element={<SummaryScreen />} exact/>
             <Route path="objectOrientedProgrammingOverview" element={<ObjectOrientedProgrammingOverviewScreen />} />
             <Route path="exceptionsRuntimeExceptionsAndErrors" element={<ExceptionsRuntimeExceptionsAndErrorsScreen />} />
-            {/* <Route path="wrappersOfPrimitiveTypes" element={<WrappersOfPrimitiveTypesScreen />} />
-            <Route path="stringsAndStringConstantPool" element={<StringsAndStringConstantPoolScreen />} />
+            <Route path="wrappersOfPrimitiveTypes" element={<WrappersOfPrimitiveTypesScreen />} />
+            {/* <Route path="stringsAndStringConstantPool" element={<StringsAndStringConstantPoolScreen />} />
             <Route path="dateTimeAPI" element={<DateTimeAPIScreen />} />
             <Route path="internationalization" element={<InternationalizationScreen />} />
             <Route path="regexOrRegexp" element={<RegexOrRegexpScreen />} />

@@ -436,6 +436,9 @@ export default function MainNavbar() {
 
         player.addEventListener("timeupdate", () => {
             if ((player.currentTime / player.duration) !== NaN && (player.currentTime / player.duration) > 0) {
+                console.log(playerProgressBarsElements[0].value);
+                console.log(playerProgressBarsElements[1].value);
+
                 playerProgressBarsElements[0].value = (player.currentTime / player.duration);
                 playerProgressBarsElements[1].value = (player.currentTime / player.duration);
             }
@@ -558,7 +561,6 @@ export default function MainNavbar() {
 
         // Primeira chamada no / faz requisição no servidor, então devemos ja sertar os estilos de cima /\ no "/"
 
-        console.log(window.location.href.substring(1).split("/"));
         if (window.location.href.substring(1).split("/")[3] == '' &&  window.location.href.substring(1).split("/").length == 4 || window.location.href.substring(1).split("/")[4] == '' && window.location.href.substring(1).split("/").length == 5) {
             ancors[0].classList.add("-ancorOfNavbarIsClicked");
         } else {
@@ -582,7 +584,7 @@ export default function MainNavbar() {
                     break;
 
                 default: 
-                    console.log("Próximos ancors...");
+                    
                     break;
             }
 
@@ -601,7 +603,21 @@ export default function MainNavbar() {
     return (
 <>
     <nav id="navbar-container" ref={navRef} >
-        <button id="nav-close-btn" className="nav-btn nav-close-btn" onClick={showNavbar}><span className="dateNowInNavbar">{new Date().getDate() < 10 ? "0" + new Date().getDate() : new Date().getDate()}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getMonth() < 10 ? "0" + new Date().getMonth() : new Date().getMonth()}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getFullYear()}</span><FaTimes /></button>
+        <button id="nav-close-btn" className="nav-btn nav-close-btn" ><span className="dateNowInNavbar">{new Date().getDate() < 10 ? "0" + new Date().getDate() : new Date().getDate()}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getMonth() < 10 ? "0" + new Date().getMonth() : new Date().getMonth()}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getFullYear()}</span>
+            <div className="audioPlayer--container --audioPlayer--container --navBar -minWidthMaxContent">
+                <div className="audioPlayer--controls">
+                    <i className="audioPlayer-control--skipPrevious"><IoPlaySkipBackCircle/></i>
+                    <i className="audioPlayer-control--play"><IoPlayCircle/></i>
+                    <i className="audioPlayer-control--pause isActiv"><IoPauseCircle/></i>
+                    <i className="audioPlayer-control--skipNext"><IoPlaySkipForwardCircle/></i>
+                </div>
+                <div className="audioPlayer-progressBar--duration">
+                    <div className="audioPlayer-progressBar--fillBar">
+                        <progress value="0" max="1"></progress>
+                    </div>
+                </div>
+            </div>
+        <FaTimes onClick={showNavbar}/></button>
         <a href="/" rel="Link do Sumário">Sumário - Resumo sobre cada Módulo</a>
         <a className= "-minWidthMaxContent" href="/#/objectOrientedProgrammingOverview" rel="Link do Overview sobre POO" onClick={() => setNavBarEmColumn(true)}>Visão Geral sobre POO</a>
         <a href="/#/exceptionsRuntimeExceptionsAndErrors" rel="Link do Exception, RuntimeException e Errors" onClick={() => setNavBarEmColumn(true)}>Exceptions, RuntimeExceptions e Errors</a>     
@@ -629,19 +645,7 @@ export default function MainNavbar() {
         <a href="/#/reflectionMetaProgramming" rel="Link de Reflection Meta Programming " onClick={() => setNavBarEmColumn(true)}>Reflection (Meta Programming) - Em estudos</a> 
         
         <audio id="audioPlayer" src={rickAndMortyMainIntro}></audio>
-        <div className="audioPlayer--container --audioPlayer--container --navBar -minWidthMaxContent">
-            <div className="audioPlayer--controls">
-                <i className="audioPlayer-control--skipPrevious"><IoPlaySkipBackCircle/></i>
-                <i className="audioPlayer-control--play"><IoPlayCircle/></i>
-                <i className="audioPlayer-control--pause isActiv"><IoPauseCircle/></i>
-                <i className="audioPlayer-control--skipNext"><IoPlaySkipForwardCircle/></i>
-            </div>
-            <div className="audioPlayer-progressBar--duration">
-                <div className="audioPlayer-progressBar--fillBar">
-                    <progress value="0" max="1"></progress>
-                </div>
-            </div>
-        </div>
+        
     </nav>
     <button id="btn-hamburguer" className="nav-btn"><FaBars onClick={showNavbar}/>{window.location.href.substring(1).split("/")[4] === 'javaBible' ? "" : <MdNotificationImportant className="animaIconPisca--alert" onClick={showNavbar}/>}
 

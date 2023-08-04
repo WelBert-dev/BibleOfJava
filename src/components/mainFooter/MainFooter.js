@@ -26,7 +26,7 @@ export default function MainFooter() {
           </div>
         </div>
         <div className='footer-copyright'>
-            <h3>Copyright ©2022</h3>
+            <h3>Copyright ©2023</h3>
             <h3>Licença: GPL v3.0</h3>
         </div>
       </div>
