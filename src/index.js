@@ -9,6 +9,9 @@ import SummaryScreen from './screens/summaryScreen/SummaryScreen';
 import ObjectOrientedProgrammingOverviewScreen from './screens/objectOrientedProgrammingOverviewScreen/ObjectOrientedProgrammingOverviewScreen';
 import ExceptionsRuntimeExceptionsAndErrorsScreen from './screens/exceptionsRuntimeExceptionsAndErrorsScreen/ExceptionsRuntimeExceptionsAndErrorsScreen';
 import WrappersOfPrimitiveTypesScreen from './screens/wrappersOfPrimitiveTypesScreen/WrappersOfPrimitiveTypesScreen';
+import StringsAndStringConstantPoolScreen from './screens/stringsAndStringConstantPoolScreen/StringsAndStringConstantPoolScreen';
+import DateTimeAPIScreen from './screens/dateTimeAPIScreen/DateTimeAPIScreen';
+import InternationalizationScreen from './screens/internationalizationScreen/InternationalizationScreen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,10 +23,10 @@ root.render(
             <Route path="objectOrientedProgrammingOverview" element={<ObjectOrientedProgrammingOverviewScreen />} />
             <Route path="exceptionsRuntimeExceptionsAndErrors" element={<ExceptionsRuntimeExceptionsAndErrorsScreen />} />
             <Route path="wrappersOfPrimitiveTypes" element={<WrappersOfPrimitiveTypesScreen />} />
-            {/* <Route path="stringsAndStringConstantPool" element={<StringsAndStringConstantPoolScreen />} />
+            <Route path="stringsAndStringConstantPool" element={<StringsAndStringConstantPoolScreen />} />
             <Route path="dateTimeAPI" element={<DateTimeAPIScreen />} />
             <Route path="internationalization" element={<InternationalizationScreen />} />
-            <Route path="regexOrRegexp" element={<RegexOrRegexpScreen />} />
+            {/* <Route path="regexOrRegexp" element={<RegexOrRegexpScreen />} />
             <Route path="inputOutputLegacyAPI" element={<InputOutputLegacyAPIScreen />} />
             <Route path="newInputOutputAPI" element={<NewInputOutputAPIScreen />} />
             <Route path="serialization" element={<SerializationScreen />} />

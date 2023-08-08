@@ -575,12 +575,25 @@ export default function MainNavbar() {
                 case 'objectOrientedProgrammingOverview':
                     ancors[1].classList.add("-ancorOfNavbarIsClicked");
                     break;
+
                 case 'exceptionsRuntimeExceptionsAndErrors':
                     ancors[2].classList.add("-ancorOfNavbarIsClicked");
                     break;
 
-                case 'exceptionsRuntimeExceptionsAndErrors':
-                    ancors[2].classList.add("-ancorOfNavbarIsClicked");
+                case 'wrappersOfPrimitiveTypes':
+                    ancors[3].classList.add("-ancorOfNavbarIsClicked");
+                    break;
+
+                case 'stringsAndStringConstantPool':
+                    ancors[4].classList.add("-ancorOfNavbarIsClicked");
+                    break;
+
+                case 'dateTimeAPI':
+                    ancors[5].classList.add("-ancorOfNavbarIsClicked");
+                    break;
+
+                case 'internationalization':
+                    ancors[6].classList.add("-ancorOfNavbarIsClicked");
                     break;
 
                 default: 
