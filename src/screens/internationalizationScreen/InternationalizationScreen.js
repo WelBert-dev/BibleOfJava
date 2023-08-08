@@ -1,8 +1,15 @@
 import React from 'react';
 
+import './InternationalizationScreen.css';
+
 import { BsFillFolderSymlinkFill } from 'react-icons/bs';
 
-import logoGlobalization from '../../resources/images/globalization.png';
+import { TbCodePlus, TbArrowsMaximize, TbArrowsDiagonalMinimize2 } from 'react-icons/tb';
+import { BiSearchAlt } from 'react-icons/bi';
+import { GiHamburger } from 'react-icons/gi';
+import { AiOutlineClose } from 'react-icons/ai';
+
+import logoGlobalization from '../../resources/images/globalization.webp';
 
 export default function InternationalizationScreen() {
 
@@ -44,21 +51,26 @@ export default function InternationalizationScreen() {
     return (
     <section id="main-javaBible--container">
         <div>
-            <h1 className="main-title">&lsaquo;Strings e String Constant Pool&rsaquo;</h1>
+            <h1 className="main-title">&lsaquo;Internationalization&rsaquo;</h1> 
             <div className="wrapper-projects">
                 <article className="projects-single">
                     <div className="projects-right">
                         <div className="projects-title--container">
                             <div>
-                                <h3 className="projects-title">Internacionalização e Globalização.</h3>
+                                <h3 className="projects-title">Internacionalização é polimorfisar o sistema adequando para diversos paises e/ou regiões geográficas, utilizando a mesma implementação (Código fonte).</h3>
                                 <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/D_internacionalizacao" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>Internacionalizar é polimorfisar o sistema adequando para diversos paises.</span>
+                            <span>- Polimorfisa formato (máscara) de números (Diferentes paises possuem diferentes convenções de separadores decimais).</span>
+                            <span>- Polimorfisa formato (máscara) de moedas (Diferentes paises possuem diferentes convenções de simbólos e separadores decimais).</span>
+                            <span>- Polimorfisa formato (máscara) de datas (Diferentes paises possuem diferentes zonas e convenções de ordem "Mês/Dia/Ano", além da tradução na escrita por extenso).</span>
+                            <span>- Polimorfisa formato (máscara) de horas (Diferentes paises possuem diferentes zonas e fusos horários, além da tradução na escrita por extenso).</span>
+                            <span>- Polimorfisa unidades de medida (Diferentes paises possuem diferentes referências como parâmetros de medições, além da tradução na escrita por extenso).</span>
+                            <span>- Polimorfisa Idiomas de Linguagem (Diferentes paises possuem diferentes idiomas e linguagens, também podemos realizar traduções automáticas entre elas com uso do ResourceBundle).</span>
                         </div>
                         <div>
                             <ul className="projects-description--container">
                                 <li>
-                                    <span className="-spanOfLinkAkitaDesbAlgTwitter">Playlist completa do curso no Youtube em: <a className="-linkBoldYellowProjects" href="https://www.youtube.com/watch?v=VKjFuX91G5Q&list=PL62G310vn6nFIsOCC0H-C2infYgwm8SWW" target="_blank">Clique AQUI!</a></span>
+                                    <span className="-spanOfLinkAkitaDesbAlgTwitter">Artigo em inglês com informações mais profundas sobre as possibilidades: <a className="-linkBoldYellowProjects" href="https://www.bmpi.dev/en/dev/i18n-l10n/" target="_blank">Clique AQUI!</a></span>
                                 </li>
                             </ul>
                             <img className="projects-logo" src={logoGlobalization} alt="Amostra logo Wrapper Classes" ></img>
@@ -67,13 +79,107 @@ export default function InternationalizationScreen() {
                             <ul className="projects-description--container">
                                 <li>
                                     {/* <h3 class="projects-subtitle">[Aulas 108 até 111]</h3> */}
-                                    <h3 class="projects-subtitle">Internacionalização</h3>
+                                    <h3 class="projects-subtitle">Contextualizando: </h3>
+                                    <ul className="projects-frontend--container">
+                                        <li>Um produto de sucesso precisa passar por vários estágios globais, do ponto de vista do desenvolvimento de software existem dois processos principais: <code className="token_reservada">Internacionalização</code> e <code className="token_reservada">Localização</code>.</li>
+                                        <li>Um <code className="token_reservada">language environment</code> é o uso de um idioma específico ou variante de idioma dentro de um país ou região geográfica, que determina o <code className="outputResult">formato (Máscara)</code> e a análise de <code className="outputResult">datas</code>, <code className="outputResult">horas</code>, <code className="outputResult">números</code> e <code className="outputResult">moedas</code>, bem como as várias <code className="outputResult">unidades de medida</code> e <code className="outputResult">nomes</code> traduzidos de <code className="outputResult">fusos horários</code>, <code className="outputResult">idiomas</code>, <code className="outputResult">países</code> e <code className="outputResult">regiões</code>.</li>
+                                        <li>A internacionalização permite que um software lide com vários <code className="token_reservada">language environment</code>, a localização permite que um software suporte um <code className="token_reservada">language environment</code> regional específico.</li>
+                                        <li>Isso significa que o processo de globalização é primeiro tornar o software internacionalizado e depois fazer a implementação da localização para que ele possa suportar um <code className="token_reservada">language environment</code> específico em uma região específica.</li>
+                                    </ul>
+
+                                    <h3 class="projects-subtitle">Problemas que a Internacionalização resolve: </h3>
+                                    <ul className="projects-frontend--container">
+                                        <li>A capacidade de exibir texto no idioma nativo do usuário.</li>
+                                        <li>Capacidade de inserir texto no idioma nativo do usuário.</li>
+                                        <li>Capacidade de processar texto no idioma nativo do usuário em uma codificação (<code className="token_reservada">encoding</code>) específica.</li>
+                                    </ul>
+
+                                    <h3 class="projects-subtitle">Conjunto de Caracteres Unicode:</h3>
+                                    <ul className="projects-frontend--container">
+                                        <li>O Unicode é um padrão global que mapeia caracteres de várias linguagens e símbolos usados em todo o mundo para um código numérico único, chamado <code className="token_reservada">code point</code> (ponto de código).</li>
+                                        <li>Ele permite a representação de uma ampla variedade de caracteres, desde <code className="outputResult">letras</code> e <code className="outputResult">números</code> até <code className="outputResult">símbolos especiais</code> e <code className="outputResult">emojis</code>.</li>
+                                        <li>Os <code className="token_reservada">code points</code> (pontos de código) variam de <code className="outputResult">0</code> a <code className="outputResult">10FFFF</code> (hexadecimal), o que é um total de mais de 1 milhão de pontos de código possíveis.</li>
+                                    </ul>
+
+                                    <h3 class="projects-subtitle">UTF-8 (Unicode Transformation Format - 8 bits):</h3>
+                                    <ul className="projects-frontend--container">
+                                        <li><code className="token_reservada">UTF-8</code> é um esquema de codificação que permite representar os caracteres Unicode usando uma sequência de bytes.</li>
+                                        <li>Ele é projetado de forma inteligente para ser eficiente e compatível com sistemas que já usam a codificação <code className="token_reservada">ASCII</code>.</li>
+                                        <li>O nome <code className="token_reservada">"UTF-8"</code> deriva do fato de que ele usa <code className="outputResult">8 bits</code> (<code className="outputResult">1 byte</code>) para representar caracteres ASCII, o que é muito eficiente para compatibilidade com sistemas legados. No entanto, ele também pode usar múltiplos bytes para representar caracteres Unicode fora do conjunto ASCII.</li>
+                                        <li>A verdadeira <code className="token_reservada">limitação do UTF-8</code> não é restrita a 8 bits, mas sim a <code className="token_reservada">4 bytes</code>. A sequência máxima de bytes que o UTF-8 pode usar para representar um caractere é de 4 bytes. Isso significa que o ponto de código Unicode mais alto que o UTF-8 pode representar é <code className="outputResult">U+10FFFF</code>, que requer 4 bytes na codificação UTF-8.</li>
+                                        <br/>
+                                        <li>A característica mais marcante do <code className="token_reservada">UTF-8</code> é que ele usa uma quantidade variável de bytes para representar diferentes caracteres:</li>
+                                        <li><code className="token_reservada">Caracteres comuns ASCII (0 a 127)</code>: São representados usando um único byte, o que significa que o UTF-8 é compatível com o sistema ASCII.</li>
+                                        <li><code className="token_reservada">Caracteres Unicode fora do conjunto ASCII</code>: São representados usando múltiplos bytes, com o número de bytes variando dependendo do code point (ponto de código). Caracteres menos comuns usam mais bytes, enquanto caracteres mais comuns usam menos, permitindo uma eficiente compactação de texto.</li>
+                                        <br/>
+                                        <li>Isso torna o <code className="token_reservada">UTF-8</code> uma escolha popular para armazenamento e transmissão de texto <code className="token_reservada">internacional</code>, já que consegue representar uma ampla gama de caracteres de maneira eficiente e é facilmente compatível com sistemas que usam codificação <code className="token_reservada">ASCII</code>.</li>
+                                    </ul>
+
+                                    <h3 class="projects-subtitle">Locale:</h3>
+                                    <ul className="projects-frontend--container">
+                                        <li>Um <code className="token_reservada">Locale</code> é o <code className="token_reservada">language environment</code> do software em tempo de execução (Runtime), que inclui <code className="outputResult">Language</code> (Idioma), <code className="outputResult">Territory</code> (Território) e <code className="outputResult">Codeset</code> (Conjunto de códigos).</li>
+                                        <li> Um <code className="token_reservada">Locale</code> é escrito no seguinte formato: Idioma[_Território[. UTF8.</li>
+                                        <li className="-marginNone--inMobile"><p className="-listItem--inMobile">No GNU/Linux, um <code className="token_reservada">Locale</code> consiste nas seguintes partes: (Mais informações: <a className="-linkBoldYellowProjects" href="https://www.certificacaolinux.com.br/comando-linux-locale/" target="_blank">Clique AQUI!</a>)</p>
+                                            <p className="main-title--implementFullBlock">Basta executar <code className="outputResult">locale</code> no terminal Bash: </p>
+                                            <ul className="main-implementFullBlock--container">
+                                                <div>
+                                                    <div className="main-bash--shellHead">
+                                                        <i><TbCodePlus /></i>
+                                                        <span><h3>welbert@r2d2: ~</h3></span>
+                                                        <div>
+                                                            <i><BiSearchAlt /></i>
+                                                            <i><GiHamburger /></i>
+                                                        </div>
+                                                        <div className="main-bash--shellHeadWindowCommomIcons">
+                                                            <i><TbArrowsDiagonalMinimize2 /></i>
+                                                            <i><TbArrowsMaximize /></i>
+                                                            <i><AiOutlineClose /></i>
+                                                        </div>
+
+                                                    </div>
+                                                    <p className="main-bash--shellBody">
+                                                    <span className="main-bash--shellUser">welbert@r2d2</span>:<span className="main-bash--shellDir">~</span>$ locale<br/>
+                                                        LANG=en_US.UTF-8 <br/>
+                                                        LANGUAGE=en_US:en <br/>
+                                                        LC_CTYPE=pt_BR.UTF-8 <br/>
+                                                        LC_NUMERIC=pt_BR.UTF-8 <br/>
+                                                        LC_TIME=pt_BR.UTF-8 <br/>
+                                                        LC_COLLATE="en_US.UTF-8" <br/>
+                                                        LC_MONETARY=pt_BR.UTF-8 <br/>
+                                                        LC_MESSAGES="en_US.UTF-8" <br/>
+                                                        LC_PAPER=pt_BR.UTF-8 <br/>
+                                                        LC_NAME=pt_BR.UTF-8 <br/>
+                                                        LC_ADDRESS=pt_BR.UTF-8 <br/>
+                                                        LC_TELEPHONE=pt_BR.UTF-8 <br/>
+                                                        LC_MEASUREMENT=pt_BR.UTF-8 <br/>
+                                                        LC_IDENTIFICATION=pt_BR.UTF-8 <br/>
+                                                        LC_ALL= <br/>
+                                                    </p>
+                                                </div>
+                                            </ul>
+                                            <p className="main-title--implementFullBlock"><code className="token_reservada">LC_COLLATE</code>: Controla a classificação de caracteres.</p>
+                                            <p className="main-title--implementFullBlock"><code className="token_reservada">LC_CTYPE</code>: Controla a função de manipulação de caracteres em maiúsculas e minúsculas ou determinando se é um caractere.</p>
+                                            <p className="main-title--implementFullBlock"><code className="token_reservada">LC_MESSAGES</code>: Formato das mensagens de prompt.</p>
+                                            <p className="main-title--implementFullBlock"><code className="token_reservada">LC_MONETARY</code>: Formato da moeda.</p>
+                                            <p className="main-title--implementFullBlock"><code className="token_reservada">LC_NUMERIC</code>: Formato do número.</p>
+                                            <p className="main-title--implementFullBlock"><code className="token_reservada">LC_TIME</code>: Formato da hora.</p>
+                                        </li>
+                                        <li className="-marginNone--inMobile"><p className="-listItem--inMobile">Em sistemas Unix-Like (GNU/Linux, MacOS e etc), para saber todos os <code className="token_reservada">Locales</code> suportados pela distro, basta verificar os diretórios do caminho <code className="token_reservada">"/usr/share/locale"</code>.</p>
+                                            <p className="main-title--implementFullBlock">Basta executar <code className="outputResult">ls /usr/share/locale</code> no terminal Bash.</p>
+                                        </li>
+                                    
+                                    </ul>
+
+                                    <h3 class="projects-subtitle">Internacionalização e Localização no Java:</h3>
                                     <ul className="projects-frontend--container">
                                         <li>Internacionalizar é polimorfisar o sistema de acordo com o <code className="token_reservada">Locale</code> (Região/Origem), adequando o sistema para diversos paises utilizando a mesma implementação, bastando alterar a instância do objeto <code className="token_reservada">Locale</code> para oferecer suporte a outros paises/origem.</li>
                                         <li><code className="token_reservada">Locale</code>: é o objeto que representa a Origem/Localidade da JVM, ou seja, podemos utilizar o polimorfismo aqui para alterar diversos comportamentos de diversas Classes visando a Internacionalização, mais informações sobre <code className="token_reservada">Locale</code>: <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/src/main/java/A_date/Aula115Locale_Internacionalizacao.java" target="_blank">Clique AQUI!</a></li>
-                                        <br/>
-                                            <li className="-marginNone--inMobile"><p className="-listItem--inMobile"><code className="token_reservada">Internacionalização de Datas</code> com <code className="token_reservada">Locale</code>: Polimorfisando o sistema e alterando o formato da máscara e etc dos objetos <code className="token_reservada">Temporais</code> (Data-Hora) de acordo com o padrão dos paises com o <code className="token_reservada">Locale</code>, mais informações: <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/src/main/java/C_formatacao/Aula115Locale_Internacionalizacao.java" target="_blank">Clique AQUI!</a></p>
-                                            
+                                    </ul>
+
+                                    <h3 class="projects-subtitle">Internacionalização de Datas:</h3>
+                                    <ul className="projects-frontend--container">                                    
+                                        <li className="-marginNone--inMobile"><p className="-listItem--inMobile"><code className="token_reservada">Internacionalização de Datas</code> com <code className="token_reservada">Locale</code>: Polimorfisando o sistema e alterando o formato da máscara e etc dos objetos <code className="token_reservada">Temporais</code> (Data-Hora) de acordo com o padrão dos paises com o <code className="token_reservada">Locale</code>, mais informações: <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/src/main/java/C_formatacao/Aula115Locale_Internacionalizacao.java" target="_blank">Clique AQUI!</a></p>
+                                        
                                             <p className="main-title--implementFullBlock">MESMO Exemplo da seção acima sobre a API de Data e Hora: Implementação demonstrando as adequações nos padrões de formatações/máscaras de acordo com Locale:</p>
                                             <ul className="main-implementFullBlock--container">
                                                 <code className="implementFullBlock">
@@ -184,8 +290,10 @@ export default function InternationalizationScreen() {
                                                 </code>
                                             </ul>
                                         </li>
+                                    </ul>
+                                    <h3 class="projects-subtitle">Internacionalização de Números:</h3>
+                                    <ul className="projects-frontend--container">     
                                         <li className="-marginNone--inMobile"><p className="-listItem--inMobile"><code className="token_reservada">Internacionalização de Números</code> com <code className="token_reservada">Locale</code> e <code className="token_reservada">NumberFormat.getInstance(Locale.JAPAN)</code>: Polimorfisando o sistema e alterando o formato da máscara que representa os números aonde os separadores de milhares e etc é diferentes para cada pais (<code className="outputResult">"1,200"</code>, <code className="outputResult">"1.200,00"</code>...), mais informações: <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/src/main/java/C_formatacao/Aula116NumberFormat_Number_Locale.java" target="_blank">Clique AQUI!</a></p>
-
                                             <p className="main-title--implementFullBlock">Exemplo de implementação demonstrando as adequações nos padrões de formatações/máscaras de acordo com Locale, alterando assim os separadores de milhares e etc:</p>
                                             <ul className="main-implementFullBlock--container">
                                                 <code className="implementFullBlock">
@@ -223,6 +331,9 @@ export default function InternationalizationScreen() {
                                                 </code>
                                             </ul>
                                         </li>
+                                    </ul>
+                                    <h3 class="projects-subtitle">Internacionalização de Moedas:</h3>
+                                    <ul className="projects-frontend--container">     
                                         <li className="-marginNone--inMobile"><p className="-listItem--inMobile"><code className="token_reservada">Internacionalização de Moedas</code> com <code className="token_reservada">Locale</code> e <code className="token_reservada">NumberFormat.getCurrencyInstance(Locale.ITALY)</code>: Polimorfisando o sistema e alterando o formato da máscara que representa as moedas aonde os separadores de milhares, simbolo da moeda e etc também são diferentes para cada pais (<code className="outputResult">"$10,000.21"</code>, <code className="outputResult">"￥10,000"</code>, <code className="outputResult">"10.000,21 €"</code>), (Obs IMPORTANTE: A internacionalização das moedas utilizando esse processo aqui descrito NÃO faz conversões de câmbio (câmbio de moeda, ou também taxa de câmbio) entre elas, apenas adéqua a máscara (Separadores de milhares e etc <code className="outputResult">","</code>, <code className="outputResult">"."</code>) e símbolos (<code className="outputResult">R$</code>, <code className="outputResult">U$</code>, <code className="outputResult">￥</code>)), mais informações: <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/src/main/java/C_formatacao/Aula117NumberFormat_Coin_Locale.java" target="_blank">Clique AQUI!</a></p>
 
                                             <p className="main-title--implementFullBlock">Exemplo de implementação demonstrando as adequações nos padrões de formatações/máscaras de acordo com Locale, alterando assim os separadores de milhares, simbolos das moedas e etc:</p>
@@ -307,7 +418,10 @@ export default function InternationalizationScreen() {
                                                 </code>
                                             </ul>
                                         </li>
-                                        <br/>
+                                    </ul>
+                                    <h3 class="projects-subtitle">ResourceBundle:</h3>
+                                    <ul className="projects-frontend--container">     
+                                        
                                         <li className="-marginNone--inMobile"><p className="-listItem--inMobile"><code className="token_reservada">ResourceBundle</code>: Classe utilizada para internacionalização e tradução automática de acordo com o <code className="token_reservada">Locale</code>, funciona como se fosse um dicionário aonde definimos arquivos de resource (estilo <code className="token_reservada">.env</code>) para cada linguagem/pais e nele definimos pares <code className="token_reservada">chave-valor</code> <code className="token_reservada">Key-Value</code>, esses dicionários são acessados pelo Java em cascata buscando o valor correspondente da chave, assim podemos pegar valores diferentes com a mesma chave, de acordo com esses <code className="token_reservada">Locale</code> que corresponde ao dicionário para ele, sendo assim podemos realizar traduções de linguagens em geral ou algo do tipo bastando alterar a instância do <code className="token_reservada">Locale</code> para o sistema se adequar nesta nova linguagem, mais informações sobre <code className="token_reservada">ResourceBundle</code>: <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/src/main/java/D_internacionalizacao/Aula130ResourceBundle_Internacionalizacao_Util.java" target="_blank">Clique AQUI!</a></p>
                                         
                                             <p className="main-title--implementFullBlock">Exemplo de implementação demonstrando como utilizar esses dicionários definidor na raiz do projeto (<code className="outputResult">"/src/main/resources"</code>), maiores explicações sobre essas definições e como funciona passo a passo descrito nos próximos pontos abaixo!</p>

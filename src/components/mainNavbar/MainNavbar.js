@@ -637,7 +637,7 @@ export default function MainNavbar() {
         <a href="/#/wrappersOfPrimitiveTypes" rel="Link do Wrappers dos Tipos Primitivos" onClick={() => setNavBarEmColumn(true)}>Wrappers dos Tipos Primitivos</a>
         <a href="/#/stringsAndStringConstantPool" rel="Link do String e Strings Constants Pool" onClick={() => setNavBarEmColumn(true)}>Strings e String Constant Pool</a>   
         <a href="/#/dateTimeAPI" rel="Link da API de Data e Tempo" onClick={() => setNavBarEmColumn(true)}>Date-Time API - Manipulação Temporal</a> 
-        <a href="/#/internationalization" rel="Link de Internacionalização" onClick={() => setNavBarEmColumn(true)}>Internacionalization - Polimorfisa Pais</a> 
+        <a href="/#/internationalization" rel="Link de Internacionalização" onClick={() => setNavBarEmColumn(true)}>Internationalization - Polimorfisa Pais</a> 
         <a href="/#/regexOrRegexp" rel="Link de Rex ou Regexp" onClick={() => setNavBarEmColumn(true)}>Regex ou Regexp - Buscando padrões em textos</a> 
         <a href="/#/inputOutputLegacyAPI" rel="Link da API legada de IO" onClick={() => setNavBarEmColumn(true)}>I/O Legacy API - Manipulação de HD</a> 
         <a href="/#/newInputOutputAPI" rel="Link da API nova de IO" onClick={() => setNavBarEmColumn(true)}>New I/O API - Manipulação de HD</a> 

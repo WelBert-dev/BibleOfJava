@@ -1,0 +1,110 @@
+p.main-bash--shellBody{
+    font-size: .9rem;
+    font-family: var(--main-fontFamily);
+    color: var(--main-textColor);
+    text-shadow: 1px 1px 2px black;
+    background-color: rgb(32, 10, 28);
+    text-align: justify;
+    padding: .5rem;
+    box-shadow: 2px 2px 3px black;
+    line-height: 1.3rem;
+}
+
+.main-bash--shellHead {
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    background-color: #262626;
+    padding: .5rem;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 3px black;
+}
+
+.main-bash--shellHead i > svg{
+    font-size: 2rem;
+    max-width: fit-content;
+    background-color: #404040;
+    height: 2rem;
+    border-radius: 5px;
+    padding: .3rem;
+    color: white;
+    margin-right: .5rem;
+    border: 1px solid #1d1d1d;
+}
+
+.main-bash--shellHead div {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+}
+
+.main-bash--shellHead > span > h3{
+    max-width: fit-content;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.main-bash--shellHeadWindowCommomIcons > i > svg {
+    font-size: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+
+.main-bash--shellDir {
+    color: #3b3eff;
+    font-family: var(--main-fontFamily);
+    font-weight: 800;
+}
+
+.main-bash--shellUser {
+    color: #11e8ff;
+    font-family: var(--main-fontFamily);
+    font-weight: 800;
+}
+
+@media (max-width: 810px)
+{
+
+    #main-bash--container div p{
+        max-width: max-content;
+    }
+
+    p.main-bash--shellBody > span {
+        margin-left: 0;
+    }
+    
+}
+
+@media (max-width: 425px)
+{
+    p.main-bash--shellBody{
+        font-size: .7rem;
+    }
+    .main-bash--shellHead {
+        padding: .3rem;
+        border-top-left-radius: .5rem;
+        border-top-right-radius: .5rem;
+    }
+
+    .main-bash--shellHead > span > h3{
+        font-size: .7rem;
+    }
+
+    .main-bash--shellHead i > svg{
+        font-size: 1.5rem;
+        height: 1.5rem;
+        border-radius: 4px;
+        padding: .3rem;
+        margin-right: .5rem;
+    }
+
+    .main-bash--shellHeadWindowCommomIcons > i > svg {
+        font-size: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+    }
+}
