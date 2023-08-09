@@ -56,10 +56,27 @@ export default function ExceptionsRuntimeExceptionsAndErrorsScreen() {
                                 <h3 className="projects-title">Tratando e lídando com Exceções e Erros.</h3>
                                 <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/anotacoes/aula94a105-exception.txt" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>                       
-                            <span>Estrutura hirarquica (Tudo no java é Object).</span>
-                            <span>Diferenças entre Checked e Unchecked.</span>
+                            <span>- Estrutura hirarquica (Tudo no java é Object), logo todos Errors e Exceptions extends de Throwable.</span>
+                            <span>- Diferenças entre Checked (Herdeiros de Exception) e Unchecked (Herdeiros de RuntimeException).</span>
+                            <span>- Errors não são Exceções pois esse tipo de problema esta fora do controle do desenvolvedor, não sendo possível capturar e realizar tratamentos com uso de lógica.</span>
+                            <span>- Errors geralmente ocorrem por conta de lógicas mal feitas, e o programa é finalizado quando lançado.</span>
+                            <span>- Exemplos de tipos de Errors comuns é OutOfMemoryError quando acaba a memória durante a execução (Runtime).</span>
+                            <span>- Ou também o mais famoso de todos, StackOverflowError quando estoura a pilha de chamadas em tempo de execução (Runtime).</span>
+                            <span>- Boas práticas sobre tratamentos de Exceptions e RuntimeExceptions.</span>
+                            <span>- Exceptions (Checked) são checadas pois são problemas já "previstos" que podem ocorrer e o JavaC nem compila se não tratar.</span>
+                            <span>- Quando não queremos tratar neste escopo corrente que está lançando, podemos delegar esses tratamentos de Exceptions (Checked) retornando todo o workflow da pilha de chamadas.</span>
+                            <span>- Por conta disto deve-se analisar em qual passo deste workflow é o melhor cenário (escopo) para capturar e realizar tratamentos.</span>
+                            <span>- A dica sobre o ponto acima é verificar qual é o nível do modificador de acesso deste método em questão que está lançando Throws na assinatura dele.</span>
+                            <span>- Tratamentos em mão dupla, ou seja, captura e realiza o tratamento desta Exception neste escopo corrente e depois re-lança o mesmo Objeto desta mesma Exceção delegando o tratamento TAMBÉM para o chamador do workflow.</span>
+                            <span>- Blocos try-catch-finally para quando desejamos sempre executar algum bloco de lógica, independentemente se lançado alguma exceção ou não (como liberar recursos em buffer e etc).</span>
+                            <span>- Capturando múltiplas exceções com uso de Sobrecarga de catchs, sempre começando a tratar Exceções mais Especializadas e depois seguindo as mais Genéricas (Devido ao Polimorfismo).</span>
+                            <span>- Múltiplos catch em linha (utilizando pipe `|` como separador no parâmetro do catch), servindo apenas para Exceções com fluxo de herança diferentes entre sí (Devido ao Polimorfismo).</span>
+                            <span>- Blocos try-with-resources para executar liberações de recursos automáticamente sem precisar executar .close() explicitamente (Apenas quando essa classe de recurso implementa Closeable ou AutoCloseable).</span>
+                            <span>- Ordem de execução do método .close() quando utilizado mais de um Recurso Closeable no argumento do try, será na ordem INVERSA em que foram declarados.</span>
+                            <span>- Regras sobre sobrescritas @Override quando esse método em modificação lança alguma Exception, quem está herdando não é obrigado a lançar as mesmas exceções que o pai lança.</span>
+                            <span>- Para o cenário anterior, apenas podemos lançar o mesmo tipo de Exceção ou subClasses mais Especializadas que o pai (superClasse) está lançando, NUNCA podemos lançar mais GENÉRICAS (ou seja, superClasses acima da árvore).</span>
                             <span>dentro outros assuntos...</span>
-                            <p>Repositório Github clicando no botão acima</p>
+                            <p>Repositório referênte a este Módulo no Github clicando no botão acima</p>
                         </div>
                         <div>
                             <ul className="projects-description--container">
@@ -74,7 +91,7 @@ export default function ExceptionsRuntimeExceptionsAndErrorsScreen() {
 
                                 <li>
                                     {/* <h3 class="projects-subtitle">[Aulas 95 até 105]</h3> */}
-                                    <h3 class="projects-subtitle">Tópicos básicos, apenas reforçando pontos chaves:</h3>
+                                    <h3 class="projects-subtitle">Reforçando pontos chaves:</h3>
                                     <ul className="projects-frontend--container">
                                         <li>Estrutura Hierárquica do fluxo de herança, Herdeiros de <code className="token_reservada">Exception</code> são <code className="token_reservada">Checked</code> e Herdeiros de <code className="token_reservada">RuntimeException</code> são <code className="token_reservada">Unchecked</code>, quando lançar <code className="token_reservada">throws</code> na assinatura e quando tratar em blocos <code className="token_reservada">try-catch</code>.</li>
                                         <li>Estrutura Hierarquica do fluxo de herança pois tudo no java é  <code className="token_reservada">Object</code>, logo, as exceções também possuem superClasses e subClasses (<code className="token_reservada">Checked</code> para herdeiros de <code className="token_reservada">Exception</code> e <code className="token_reservada">Unchecked</code> para herdeiros de <code className="token_reservada">RuntimeException</code>).</li>
