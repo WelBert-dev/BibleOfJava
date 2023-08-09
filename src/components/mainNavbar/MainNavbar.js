@@ -112,8 +112,8 @@ export default function MainNavbar() {
         }  
     };
 
-    const locationFlag = useLocation();
-    const [navBarEmColumn, setNavBarEmColumn] = useState(false);
+    // const locationFlag = useLocation();
+    // const [navBarEmColumn, setNavBarEmColumn] = useState(false);
     
 
 
@@ -632,30 +632,31 @@ export default function MainNavbar() {
             </div>
         <FaTimes onClick={showNavbar}/></button>
         <a href="/" rel="Link do Sumário">Sumário - Resumo sobre cada Módulo</a>
-        <a className= "-minWidthMaxContent" href="/#/objectOrientedProgrammingOverview" rel="Link do Overview sobre POO" onClick={() => setNavBarEmColumn(true)}>Visão Geral sobre POO</a>
-        <a href="/#/exceptionsRuntimeExceptionsAndErrors" rel="Link do Exception, RuntimeException e Errors" onClick={() => setNavBarEmColumn(true)}>Exceptions, RuntimeExceptions e Errors</a>     
-        <a href="/#/wrappersOfPrimitiveTypes" rel="Link do Wrappers dos Tipos Primitivos" onClick={() => setNavBarEmColumn(true)}>Wrappers dos Tipos Primitivos</a>
-        <a href="/#/stringsAndStringConstantPool" rel="Link do String e Strings Constants Pool" onClick={() => setNavBarEmColumn(true)}>Strings e String Constant Pool</a>   
-        <a href="/#/dateTimeAPI" rel="Link da API de Data e Tempo" onClick={() => setNavBarEmColumn(true)}>Date-Time API - Manipulação Temporal</a> 
-        <a href="/#/internationalization" rel="Link de Internacionalização" onClick={() => setNavBarEmColumn(true)}>Internationalization - Polimorfisa Pais</a> 
-        <a href="/#/regexOrRegexp" rel="Link de Rex ou Regexp" onClick={() => setNavBarEmColumn(true)}>Regex ou Regexp - Buscando padrões em textos</a> 
-        <a href="/#/inputOutputLegacyAPI" rel="Link da API legada de IO" onClick={() => setNavBarEmColumn(true)}>I/O Legacy API - Manipulação de HD</a> 
-        <a href="/#/newInputOutputAPI" rel="Link da API nova de IO" onClick={() => setNavBarEmColumn(true)}>New I/O API - Manipulação de HD</a> 
-        <a href="/#/serialization" rel="Link de Serialização" onClick={() => setNavBarEmColumn(true)}>Serialization - Fluxo de Bytes entre Camadas</a> 
-        <a href="/#/collectionsAPI" rel="Link da API de Coleções" onClick={() => setNavBarEmColumn(true)}>Collections API - Manipulação Data Structures</a> 
-        <a href="/#/generics" rel="Link de Generics" onClick={() => setNavBarEmColumn(true)}>Generics - Substituí contextos Object do legacy</a> 
-        <a href="/#/nestedInnerClass" rel="Link de Classes Internas Aninhadas" onClick={() => setNavBarEmColumn(true)}>Nested Inner Class - Acoplamento forte entre elas</a> 
-        {/* <a href="/#/functionalProgramming" rel="Link de Programação Funcional" onClick={() => setNavBarEmColumn(true)}>Programação Funcional</a>  */}
-        <a href="/#/lambdasFunctionalProgramming" rel="Link de Lambdas Programação Funcional" onClick={() => setNavBarEmColumn(true)}>Funções Lambdas - Programação Funcional</a>
-        <a href="/#/methodReference" rel="Link de Referência a Métodos" onClick={() => setNavBarEmColumn(true)}>Method Reference - Substituí contextos Lambdas</a> 
-        <a href="/#/optionalObjectNullPointerHandling" rel="Link de Objeto Opcional" onClick={() => setNavBarEmColumn(true)}>Optional Object - Null Pointer Handling</a> 
-        <a href="/#/streamsFunctionalProgramming" rel="Link de Streams Programação Funcional" onClick={() => setNavBarEmColumn(true)}>Streams API - Manipulação fluxo de dados (+Coesão)</a> 
-        <a href="/#/threads" rel="Link de Streams Programação Funcional" onClick={() => setNavBarEmColumn(true)}>Threads - Maneira mais baixo nível de lídar</a> 
-        <a href="/#/synchronizationMultiThreads" rel="Link de Sincronização de MultiThreads" onClick={() => setNavBarEmColumn(true)}>Synchronization (MultiThreads) - Configura manual</a> 
-        <a href="/#/concurrencyMultiThreads" rel="Link de Concorrência de MultiThreads" onClick={() => setNavBarEmColumn(true)}>Concurrency (MultiThreads) - Lídando e API</a> 
-        <a href="/#/designPatternsGangOfFour" rel="Link de Padrões de Designer do GOF" onClick={() => setNavBarEmColumn(true)}>Design Patterns (Gang Of Four) - Tipos e Aplicações</a> 
-        <a href="/#/jdbcDatabaseConnection" rel="Link de JDBC Database Connection" onClick={() => setNavBarEmColumn(true)}>JDBC (Database Connection) - Plugando o Banco</a> 
-        <a href="/#/reflectionMetaProgramming" rel="Link de Reflection Meta Programming " onClick={() => setNavBarEmColumn(true)}>Reflection (Meta Programming) - Em estudos</a> 
+        <a className= "-minWidthMaxContent" href="/#/objectOrientedProgrammingOverview" rel="Link do Overview sobre POO" >Visão Geral sobre POO</a>
+        <a href="/#/exceptionsRuntimeExceptionsAndErrors" rel="Link do Exception, RuntimeException e Errors" >Exceptions, RuntimeExceptions e Errors</a>     
+        <a href="/#/wrappersOfPrimitiveTypes" rel="Link do Wrappers dos Tipos Primitivos" >Wrappers dos Tipos Primitivos</a>
+        <a href="/#/stringsAndStringConstantPool" rel="Link do String e Strings Constants Pool" >Strings e String Constant Pool</a>   
+        <a href="/#/dateTimeAPI" rel="Link da API de Data e Tempo" >Date-Time API - Manipulação Temporal</a> 
+        <a href="/#/internationalization" rel="Link de Internacionalização" >Internationalization - Polimorfisa Pais</a> 
+        {/* APARTIR DAQUI ESTÀ INCOMPLETO! */}
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/E_regex" rel="Link de Rex ou Regexp" >Regex ou Regexp - Buscando padrões em textos</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/F_io" rel="Link da API legada de IO" >I/O Legacy API - Manipulação de HD</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/G_nio" rel="Link da API nova de IO" >New I/O API - Manipulação de HD</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/H_serializacao" rel="Link de Serialização" >Serialization - Fluxo de Bytes entre Camadas</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/I_collections" rel="Link da API de Coleções" >Collections API - Manipulação Data Structures</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/J_generics" rel="Link de Generics" >Generics - Substituí contextos Object do legacy</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/K_classesInternas" rel="Link de Classes Internas Aninhadas" >Nested Inner Class - Acoplamento forte entre elas</a> 
+        {/* <a href="/#/functionalProgramming" rel="Link de Programação Funcional" >Programação Funcional</a>  */}
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/M_lambdas" rel="Link de Lambdas Programação Funcional" >Funções Lambdas - Programação Funcional</a>
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/N_methodReference" rel="Link de Referência a Métodos" >Method Reference - Substituí contextos Lambdas</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/O_optional" rel="Link de Objeto Opcional" >Optional Object - Null Pointer Handling</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/P_streams" rel="Link de Streams Programação Funcional" >Streams API - Manipulação fluxo de dados (+Coesão)</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/Q_threads" rel="Link de Streams Programação Funcional" >Threads - Maneira mais baixo nível de lídar</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/Q_threads/sincronismo" rel="Link de Sincronização de MultiThreads" >Synchronization (MultiThreads) - Configura manual</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/R_concurrent" rel="Link de Concorrência de MultiThreads" >Concurrency (MultiThreads) - Lídando e API</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/S_designPatterns" rel="Link de Padrões de Designer do GOF" >Design Patterns (Gang Of Four) - Tipos e Aplicações</a> 
+        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/T_jdbc" rel="Link de JDBC Database Connection" >JDBC (Database Connection) - Plugando o Banco</a> 
+        <a href="/#/reflectionMetaProgramming" rel="Link de Reflection Meta Programming " >Reflection (Meta Programming) - Em estudos</a> 
         
         <audio id="audioPlayer" src={rickAndMortyMainIntro}></audio>
         

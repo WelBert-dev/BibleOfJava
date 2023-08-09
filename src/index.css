@@ -250,6 +250,10 @@ code.token_reservada.--dateOfImplementation {
       max-width: 100%;
       margin: 0 auto;
   }
+
+  .projects-title--container > span {
+    font-size: .9rem;
+  }
 }
 
 @media (max-width: 425px)
@@ -287,6 +291,10 @@ code.token_reservada.--dateOfImplementation {
       color: #ffd700;
       font-weight: bold;
       font-size: .6rem;
+  }
+
+  .projects-title--container > span {
+    font-size: .8rem;
   }
 
   #main-projects--container {
