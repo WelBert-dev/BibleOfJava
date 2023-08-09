@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1267d080.css",
-    "main.js": "/static/js/main.708e06ad.js",
+    "main.js": "/static/js/main.288035ea.js",
     "static/media/Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO MUNDO _ NERD HITS.mp3": "/static/media/Rap da Akatsuki (Naruto) - OS NINJAS MAIS PROCURADOS DO MUNDO _ NERD HITS.9a64b4ab0bb787a692a6.mp3",
     "static/media/Rap dos Hokages (Naruto) - A VONTADE DO FOGO _ NERD HITS.mp3": "/static/media/Rap dos Hokages (Naruto) - A VONTADE DO FOGO _ NERD HITS.06f832336e73e946e7a0.mp3",
     "static/media/Rap do Itachi (Naruto) _ Tauz RapTributo 18.mp3": "/static/media/Rap do Itachi (Naruto) _ Tauz RapTributo 18.692d028d8c34df232c45.mp3",
@@ -84,10 +84,10 @@
     "static/media/globalization.webp": "/static/media/globalization.9d5e7106ad8a7e0e49aa.webp",
     "index.html": "/index.html",
     "main.1267d080.css.map": "/static/css/main.1267d080.css.map",
-    "main.708e06ad.js.map": "/static/js/main.708e06ad.js.map"
+    "main.288035ea.js.map": "/static/js/main.288035ea.js.map"
   },
   "entrypoints": [
     "static/css/main.1267d080.css",
-    "static/js/main.708e06ad.js"
+    "static/js/main.288035ea.js"
   ]
 }
