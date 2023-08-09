@@ -53,8 +53,22 @@ export default function DateTimeAPIScreen() {
                                 <h3 className="projects-title">Manipulações temporais, maneira legada e nova.</h3>
                                 <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>- EM DESENVOLVIMENTO!</span>
-                
+                            <span>- Na maneira legada não existia um pacote completo para manipulações e tratamentos temporais, por conta disto existiam bastante limitações nas possibilidades.</span>
+                            <span>- Na maneira legada inicialmente (Classe Date) não visava muito questões de Internacionalização, então não suportava Polimorfismo de acordo com a localização.</span>
+                            <span>- Surge a Classe Calendar para tentar contornar o problema de cima, abstrata e utiliza-se o método estático getInstance() para obter um objeto de instância.</span>
+                            <span>- Ela corrige o problema de Internacionalização realizando calculos de acordo com a região da JVM para obter o objeto polimorfisado e adequado para tal região.</span>
+                            <span>- Os objetos temporais utilizam em baixo nível um long que representa os millisegundos de 01/01/1970Z com limitação até 17/08/292278994Z 04:12 (Valor máximo suportado pelo long).</span>
+                            <span>- "Z" no final de "Zulutime" (GMT/UTC) que é uma representação UNIVERSAL (Fuso horário 0), ou seja, utiliza-se essa representação para promover compatibilidade entre as diversas regiões geográficas mundo a fora, e para se obter a data e tempo "correto" de cada localização basta realizar conversões "brasilia time to utc".</span>
+                            <span>- Isso ocorre pois é mais facil realizar calculos utilizando números (5051554454) computacionalmente entendível, ao invés de Strings "Dia/Mês/Ano" humanamente entendível.</span>
+                            <span>- Por conta desta representação utilizando long em baixo nível, utiliza-se Classes de formatação que adicionam uma camada de mais alto nível com uso de máscaras de datas "Dia/Mês/Ano" para melhorar nas análises humanas.</span>
+                            <span>- Essas formatações também suportam máscaras de acordo com o padrão de origem da JVM (Uma vez que cada pais possue suas próprias convenções temporais) - Internacionalização de datas.</span>
+                            <span>- Também é possivel realizar calculos e operações levando em consideração as diferenças de fusos horários entre as diversas regiões geográficas - Localização de datas.</span>
+                            <span>- Por conta desses diversos problemas de Internacionalização e Localização, Baixa coesão entre Classes e limitações por conta do uso do long em baixo nível, Stephen Colebourne cria um pacote completo para tratamentos temporais (Joda-Time) e o Java adota na API Nativa apartir do Java 8 (java.time).</span>
+                            <span>- Principais Classes do novo pacote java.time, que representam e centralizam cada "unidade" temporal Instant, LocalDate, LocalTime, LocalDateTime, ZonedDateTime, adicionando mais coesão nesses tratamentos.</span>
+                            <span>- Também são representados em baixo nível pelos milissegundos, portanto também devemos formatar eles para melhorar na visualização humana, porém desta vez IMUTÁVEIS e suportando até "+999999999/12/31" e "-999999999/01/01".</span>
+                            <span>- Diferenças entre o Instant e o ZonedDateTime (Sutil, Instant representa um ponto instantâneo na linha do tempo sem considerar time zone ou seja, sem informações de fuso horário (pois utiliza GMT/UTC "Z"), já o ZonedDateTime é a mesma lógica porém adicionando uma Localização, ou seja, adicionando um time zone de acordo com a região geográfica em representação).</span>
+                            <span>- Esses são apenas resumos dos resumos, as possibilidades são imensas e se colocar tudo aqui ficaria enorme rsrs, mais informações rolando a tela abaixo...</span>
+                            <span>- Obs: Vale lembrar que nenhuma implementação cobre 100% dos problemas e sempre vão existir margens de ERROS, não é diferente para essa nova API de data e tempo ("Inspirada" no Joda-time), maiores informações sobre essa implementação: <a className="-linkBoldYellowProjects" href="https://pt.stackoverflow.com/questions/413649/por-que-eu-deveria-ou-n%C3%A3o-usar-a-joda-time#:~:text=Quando%20foi%20anunciado%20que%20Stephen,datas%20no%20Java%2C%20o%20java." target="_blank">Clique AQUI!</a></span>
                         </div>
                         <div>
                             <ul className="projects-description--container">
@@ -357,7 +371,7 @@ export default function DateTimeAPIScreen() {
                                         <br/>
                                         <br/>
                                         <h3 class="projects-subtitle">Maneira Nova</h3>
-                                        <li><code className="token_reservada">Maneira Nova</code>: Com esses problemas de Limitações nas representações (<code className="token_reservada">long</code>) possíveis e problemas de Internacionalização apartir do Java 8 é adicionado um pacote completo especializado em datas <code className="token_reservada">java.time</code> (Criado por um Brasileiro e adotado pelo Java).</li>
+                                        <li><code className="token_reservada">Maneira Nova</code>: Com esses problemas de Limitações nas representações (<code className="token_reservada">long</code>) possíveis e problemas de Internacionalização apartir do Java 8 é adicionado um pacote completo especializado em datas <code className="token_reservada">java.time</code> ("Inspirado no Joda-Time").</li>
                                         <li>Os novos objetos <code className="token_reservada">Temporais</code> descritos abaixo são <code className="token_reservada">Imutáveis</code> e também são representados em baixo nível pelos <code className="outputResult">milissegundos</code>, portanto também devemos formatar eles para melhorar na visualização humana, porém desta vez suportando até <code className="outputResult">"+999999999-12-31"</code> e <code className="outputResult">"-999999999-01-01"</code>.</li>
                                         <br/>
                                         <li>Principais Classes <code className="token_reservada">Temporais</code> do novo pacote:</li>
