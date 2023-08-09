@@ -55,8 +55,8 @@ export default function ObjectOrientedProgrammingOverviewScreen() {
                                 <h3 className="projects-title">Não explica "Oque é POO" e sim como o Java lída.</h3>
                                 <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>Menor nível de profundidade se comparado aos próximos.</span>
-                            <span>Sem exemplos de código pois é muito básico.</span>
+                            <span>- Menor nível de profundidade nas informações se comparado aos próximos Módulos.</span>
+                            <span>- Sem exemplos de código pois é muito básico.</span>
                         </div>
                         <div>
                             <ul className="projects-description--container">
@@ -70,7 +70,7 @@ export default function ObjectOrientedProgrammingOverviewScreen() {
                             <ul className="projects-description--container">
                                 <li>
                                     {/* <h3 class="projects-subtitle">[Aulas 75 até 94]</h3> */}
-                                    <h3 class="projects-subtitle">Tópicos, básicos sem exemplos de códigos: </h3>
+                                    <h3 class="projects-subtitle">Básico, sem exemplos de códigos: </h3>
                                     <ul className="projects-frontend--container">
                                         <li>[Aula 75] - Sequência de inicialização (Ordem de precedência de execução quando usado herança <code className="token_reservada">extends</code>, e blocos estáticos <code className="token_reservada">static &#123;&#125;</code>): <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/anotacoes/aula75-sequenciaDeInicializacao.txt" target="_blank">Clique AQUI!</a></li>
                                         <li>[Aula 77] - Mais sobre <code className="token_reservada">static</code> (Alocamento único de memória, Compartilhado entre todas instâncias de classe): <a className="-linkBoldYellowProjects" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/anotacoes/aula77-maisSobreStatic.txt" target="_blank">Clique AQUI!</a></li>
