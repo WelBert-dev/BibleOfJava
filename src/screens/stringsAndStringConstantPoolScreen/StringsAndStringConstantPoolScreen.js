@@ -51,22 +51,22 @@ export default function StringsAndStringConstantPoolScreen() {
                         <div className="projects-title--container">
                             <div>
                                 <h3 className="projects-title">Não explica "Oque é String" e sim como o Java lída em baixo nível.</h3>
-                                <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
+                                <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/anotacoes/aula108a111-classesUtilitarias-Strings.txt" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>Implementação da técnica de otimização "String Interning" na JVM.</span>
-                            <span>String Constant Pool só é válida para Strings Literais!</span>
-                            <span>Strings alocadas manualmente com `new` não vão parar no Pool.</span>
-                            <span>Essa técnica visa otimizar recursos de armazenamento em RAM.</span>
-                            <span>Isso é possível pois as palavras são compartilhadas entre toda aplicação.</span>
-                            <span>Strings Literais são IMUTÁVEIS, pois as referências apontam para a mesma String do Pool.</span>
-                            <span>Devido a esse comportamento, cenários de multiplas iterações com concateção é custoso!</span>
-                            <span>Pois a cada String nova é alocado memória nova no Pool, e isso ocorre a cada passo da iteração.</span>
-                            <span>Sem contar outros processamentos relacionados a implementação baixo nível do Pool.</span>
-                            <span>Como verificações em todo Heap do Pool para verificar se a nova palavra em insert já existe lá.</span>
-                            <span>Para esses cenários de multiplas iterações com concatenações utilizar as classes Especializadas.</span>
-                            <span>StringBuilder para contextos Não-Thread Safe e StringBuffer para contextos Thread-Safe.</span>
-                            <span>Essas classes são mais performáticas pois elas manipulam o mesmo endereço de memória inicial.</span>
-                            <span>Elas não utilizam o String Constant pool, e a melhora na performance é GRITANTE, exemplos abaixo.</span>
+                            <span>- Implementação da técnica de otimização "String Interning" na JVM, sendo ela String Constant Pool.</span>
+                            <span>- String Constant Pool só é válida para Strings Literais! (String literal = "Certificação Oracle veem!")</span>
+                            <span>- Strings alocadas manualmente com a keyword `new` não vão parar no Pool de Strings Constantes.</span>
+                            <span>- Essa técnica visa otimizar recursos de armazenamento em memória RAM.</span>
+                            <span>- Isso é possível pois as palavras são compartilhadas entre toda aplicação.</span>
+                            <span>- Strings Literais são IMUTÁVEIS, pois as referências apontam para a mesma String do Pool de Strings Constantes.</span>
+                            <span>- Devido a esse comportamento, cenários de multiplas iterações com concateção é custoso!</span>
+                            <span>- Pois a cada String nova é alocado memória nova no Pool, e isso ocorre a cada passo da iteração.</span>
+                            <span>- Sem contar outros processamentos relacionados a implementação em baixo nível do String Constant Pool.</span>
+                            <span>- Como verificações em todo Heap do Pool para verificar se a nova palavra em insert já existe lá.</span>
+                            <span>- Para esses cenários de multiplas iterações com concatenações utilizar as classes de Strings Especializadas.</span>
+                            <span>- StringBuilder para contextos Não-Thread Safe e StringBuffer para contextos Thread-Safe.</span>
+                            <span>- Essas classes são mais performáticas pois elas manipulam o mesmo endereço de memória alocado inicialmente.</span>
+                            <span>- Elas não utilizam o String Constant pool, e a melhora na performance é GRITANTE, exemplos abaixo.</span>
                         </div>
                         <div>
                             <ul className="projects-description--container">
