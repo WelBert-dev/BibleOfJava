@@ -53,15 +53,15 @@ export default function WrappersOfPrimitiveTypesScreen() {
                         <div className="projects-title--container">
                             <div>
                                 <h3 className="projects-title">Equivalentes dos tipos primitivos porém em forma de Objetos.</h3>
-                                <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
+                                <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/blob/main/anotacoes/aula106e107-classesUtilitarias-Wrappers.txt" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>Altera comportamento de passagem por valor para passagem por referência.</span>
-                            <span>Conceito de Boxing e Unboxing (Ação importante de encapsular e desencapsular).</span>
-                            <span>A ação de cima é custosa em alguns cenários de multiplas iterações em looping.</span>
-                            <span>Utilizar apenas quando o contexto EXIGIR objetos.</span>
-                            <span>Tambem fornecem métodos estáticos e não estáticos como utilitários.</span>
-                            <span>Em fluxos Streams é interessante utilizar Streams Especializados para primitivos.</span>
-                            <span>Sem exemplos de código pois é muito básico.</span>
+                            <span>- Altera comportamento de passagem por valor (Dos tipos primitivos) para passagem por referência (Dos objetos).</span>
+                            <span>- Conceito de Boxing e Unboxing (Ação importante de encapsular e desencapsular, sem precisar de usos explicitos de getters and setters ou alocamentos manuais com new).</span>
+                            <span>- A ação de cima é custosa em alguns cenários de operações utilizando Wrappers em multiplas iterações (looping), devido a ficar alocando e desalocando memória a cada passo da iteração para realizar a operação.</span>
+                            <span>- Utilizar esses objetos Wrappers apenas quando o contexto EXIGIR objetos, sempre que possivel é melhor optar pelos tipos primitivos nativos, não apenas por conta do ponto acima como também devemos considerar o custo computacional para a construção de objetos.</span>
+                            <span>- Tambem fornecem métodos estáticos e não estáticos como utilitários.</span>
+                            <span>- Em fluxos Streams é interessante utilizar Streams Especializados para primitivos, ao invés de optar pelo Stream Genérico.</span>
+                            <span>- Sem exemplos de código pois é muito básico.</span>
                         </div>
                         <div>
                             <ul className="projects-description--container">
