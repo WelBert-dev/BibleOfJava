@@ -96,11 +96,10 @@ main {
 .projects-title--container > span {
   font-weight: 400;
   color: #fff;
-  text-shadow: 1px 1px black;
-  font-size: .9rem;
+  font-size: 1rem;
   border-radius: 5px;
   padding: 1px;
-  margin: 2px auto 0 0;
+  margin: 2px auto 0.5rem 0;
   font-family: var(--main-fontfamily-Press2PLight);
 }
 
@@ -142,7 +141,7 @@ main {
   font-size: .9rem;
   color: white;
   text-decoration: underline;
-  padding: 0 0 .2rem 0;
+  padding: .5rem 0 .2rem 0;
 }
 
 .projects-subtitle {

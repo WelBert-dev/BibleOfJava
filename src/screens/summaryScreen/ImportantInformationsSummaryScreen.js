@@ -7,15 +7,15 @@ export default function ImportantInformationsSummaryScreen() {
         <ul className="projects-frontend--container">
 
             <li>Criei esse projeto no github durante meus estudos para servir como um "Dicionário" de consultas.</li>
-            <li>Agora estou transferindo essas informações do github neste Portfólio como uma espécie de "Bíblia".</li>
+            <li>Agora estou transferindo essas informações do github neste site como uma espécie de "Bíblia".</li>
             <li>A ideia é sempre ir atualizando o conhecimento aqui, e também irei implementar barra de pesquisa por palavras chaves.</li>
             <li>Depois de finalizado todos os Módulos (Com exemplos de códigos) irei "esconder" as seções e só será exibido ao clicar no botão.</li>
             <li>Curso mais completo do Youtube sobre desenvolvimento com Java do canal @DevDojoBrasil.</li>
             <li>Documentei o curso completo desde Fundamentos até a API Nativa, com Total de 285 Aulas.</li>
             <li>Porém eu não fiz o curso desde o inicio pois eu já estudei POO com a linguagem C# no IFSP.</li>
             <li>Logo, só documentei informações especificas sobre como o Java lída em relação a POO. </li>
-            <li>Por conta disto, a primeira seção "Overview sobre POO" contém menos nível de profundidade se comparado com as próximas.</li>
-            <li>Além disto, a seção "String e Strings Constants Pool" não explica "O que é String", mas sim como o Java lída em baixo nível.</li>
+            <li>Por conta disto, a primeira página "Overview sobre POO" contém menos nível de profundidade se comparado com as próximas.</li>
+            <li>Além disto, a página "String e Strings Constants Pool" não explica "O que é String", mas sim como o Java lída em baixo nível.</li>
             <li>Repositório git criado no formato de "RoadMap" para cada Módulo e seus tópicos abordados.</li>
             <li>Processo todo documentado e informações faltantes adicionadas utilizando ChatGPT.</li>
             <li>Dividido em duas partes/pacotes no github: Documentação em Anotações e src de estudos práticos.</li>
@@ -26,12 +26,11 @@ export default function ImportantInformationsSummaryScreen() {
             <li>Também não existem pacotes em <code className="token_reservada">`src`</code> de estudos práticos para eles no repositório git do projeto devido ao meu nível de instrução técnica adquirido no IFSP, porisso para eles só existe o arquivo txt com o OverView geral em <code className="token_reservada">`/anotacoes`</code>.</li>
             <li>Portanto, esse projeto só será útil para quem já possuí a base sobre POO pois ele é de nível Intermediário até o Avançado sobre a linguagem.</li>
             <br/>
-            <li>Informações sobre a navegação entre esse Portifólio (Site pesssoal) e o repositório git correspontente deste projeto, para melhor usufruir do aprendizado:</li>
+            <li>Informações sobre a navegação entre esse site e o repositório git correspontente deste projeto, para melhor usufruir do aprendizado:</li>
             <li><code className="token_reservada">Links em amarelo</code>: Redirecionam o tópico/assunto para o correspondente do repositório git do projeto, que contém maiores informações sobre, ou seja, NÃO redirecionam para a vídeo aula do Youtube.</li>
-            <li>Os estudos estão dividos em dois (2) pacotes no repositório git, portanto existem dois (2) tipos de links em amarelo: Sendo um para o <code className="token_reservada">`src`</code> de estudos práticos, ou seja, implementação/código .java em sí. Outro para o arquivo txt com Overview geral sobre o módulo que fica na raiz do projeto em <code className="token_reservada">`/anotacoes`</code>.</li>
+            <li>Os estudos estão dividos em dois (2) pacotes no repositório git, portanto existem dois (2) tipos de links em amarelo: Sendo um para o <code className="token_reservada">`src`</code> de estudos práticos, ou seja, implementação/código <code className="outputResult">.java</code> em sí. Outro para o arquivo txt com Overview geral sobre o módulo que fica na raiz do projeto em <code className="token_reservada">`/anotacoes`</code>.</li>
             <br/><br/>
-            <li>OBS: O conteúdo NÃO ACABA na seção "Módulos Abordados" abaixo, nesta seção contém RESUMO sobre cada Módulo e seus tópicos abordados, ou seja, para cada Módulo contém uma seção COMPLETA com explicações teóricas e exemplos de implementações (Códigos) para cada um dos tópicos, portanto tenha paciência e role a tela até a seção que deseja consultar! rsrs ;D (Por conta dessa necessidade de rolagens infinitas, quando tudo estiver finalizado irei implementar janelas que seram escondidas e só será exibido ao clicar no botão, para uma melhor UX). Dica: Utilize "CTRL + F" e procure por palavras chaves sobre o que desejas consultar (Por enquanto essa é a solução).</li>
-            <li>Essa Bíblia está em desenvolvimento, portanto existem bastante Módulos sem muitas informações, a solução para isto é ir no diretório do projeto correspondente no meu perfil do Github pois lá contém TODAS as informações completas (Estou transferindo essas informações de lá para este portfólio).</li>
+            <li>Essa Bíblia está em desenvolvimento, portanto existem bastante Módulos sem muitas informações, a solução para isto é ir no diretório do projeto correspondente no meu perfil do Github pois lá contém TODAS as informações completas (Estou transferindo essas informações de lá para este site).</li>
         </ul>
     </li>
     )

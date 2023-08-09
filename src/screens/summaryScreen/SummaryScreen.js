@@ -58,8 +58,17 @@ export default function SummaryScreen() {
                                 <h3 className="projects-title">Maratona Java - DevDojo<br/><br/>EM DESENVOLVIMENTO!<br/>(Testando Layouts).</h3>
                                 <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>Dicionário completo para consultas.</span>
-                            <span>Desde fundamentos até a API Nativa.</span>
+                            <span>- Dicionário completo para consultas, desde fundamentos e convenções até a API Nativa.</span>
+                            <span>- 24 Mandamentos (Módulos) que descrevem a estrutura interna do Java ou da JVM, contendo todo o ciclo de vida do Software na perspectiva do Java.</span>
+                            <span>- Transferindo informações do repositório git de estudos correspondente "MaratonaJava-DevDojo" no Github para este Site.</span>
+                            <span>- Em desenvolvimento, então ainda possuem páginas vazias ou sem muitas informações (Paciência rsrs).</span>
+                            <span>- Caso queira maiores informações ou módulos faltantes, ir no repositório do Projeto correspondente "WelBert-dev/MaratonaJava-DevDojo" no Github, ou clique no botão acima.</span>
+                            <span>- Grande parte do conhecimento é devido ao curso "Maratona Java" do canal no YT "@DevDojoBrasil".</span>
+                            <span>- Informações faltantes ou complementares das videoaulas adicionadas utilizando ChatGPT, e outras fontes ou canais de estudos do YT relacionados a desenvolvimento com Java.</span>
+                            <span>- Carga de conhecimentos em POO, desenvolvimento e lógica de programação em geral acumulados ao longo de quase 3 anos de estudos intensos envolto da tecnologia.</span>
+                            <span>- Sou entusiasta GNU/Linux então também fiz algumas alusões, referências, convenções ou comparações sobre como o S.O Ubuntu lida em determinados cenários, em conjunto ou em relação ao Java (Pois é nele que eu desenvolvo desde quando iniciei meus estudos em programação e desenvolvimento no começo de 2021).</span>
+                            <span>- Desde o inicio eu quis simular ao máximo possível o ambiente real de produção, uma vez que a maioria dos servidores em cloud é alguma distro GNU/Linux em containers.</span>
+                            <span>- TODOS meus projetos estão abertos aos curiosos e entusiastas de desenvolvimento e programação no Github (Inclusive o código fonte deste Site e do meu Portfólio).</span>
                             <p>Repositório Github clicando no botão acima</p>
                         </div>
                         <div>
