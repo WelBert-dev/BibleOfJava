@@ -596,6 +596,10 @@ export default function MainNavbar() {
                     ancors[6].classList.add("-ancorOfNavbarIsClicked");
                     break;
 
+                case 'regexOrRegexp':
+                    ancors[7].classList.add("-ancorOfNavbarIsClicked");
+                    break;
+
                 default: 
                     
                     break;
@@ -638,8 +642,8 @@ export default function MainNavbar() {
         <a href="/#/stringsAndStringConstantPool" rel="Link do String e Strings Constants Pool" >Strings e String Constant Pool</a>   
         <a href="/#/dateTimeAPI" rel="Link da API de Data e Tempo" >Date-Time API - Manipulação Temporal</a> 
         <a href="/#/internationalization" rel="Link de Internacionalização" >Internationalization - Polimorfisa Pais</a> 
+        <a href="/#/regexOrRegexp" rel="Link de Rex ou Regexp" >Regex ou Regexp - Buscando padrões em textos</a> 
         {/* APARTIR DAQUI ESTÀ INCOMPLETO! */}
-        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/E_regex" rel="Link de Rex ou Regexp" >Regex ou Regexp - Buscando padrões em textos</a> 
         <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/F_io" rel="Link da API legada de IO" >I/O Legacy API - Manipulação de HD</a> 
         <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/G_nio" rel="Link da API nova de IO" >New I/O API - Manipulação de HD</a> 
         <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/H_serializacao" rel="Link de Serialização" >Serialization - Fluxo de Bytes entre Camadas</a> 

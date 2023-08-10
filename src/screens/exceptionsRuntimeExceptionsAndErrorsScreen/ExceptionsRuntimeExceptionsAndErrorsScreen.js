@@ -75,7 +75,7 @@ export default function ExceptionsRuntimeExceptionsAndErrorsScreen() {
                             <span>- Ordem de execução do método .close() quando utilizado mais de um Recurso Closeable no argumento do try, será na ordem INVERSA em que foram declarados.</span>
                             <span>- Regras sobre sobrescritas @Override quando esse método em modificação lança alguma Exception, quem está herdando não é obrigado a lançar as mesmas exceções que o pai lança.</span>
                             <span>- Para o cenário anterior, apenas podemos lançar o mesmo tipo de Exceção ou subClasses mais Especializadas que o pai (superClasse) está lançando, NUNCA podemos lançar mais GENÉRICAS (ou seja, superClasses acima da árvore).</span>
-                            <span>dentro outros assuntos...</span>
+                            <span>- Dentro outros assuntos...</span>
                             <p>Repositório referênte a este Módulo no Github clicando no botão acima</p>
                         </div>
                         <div>
