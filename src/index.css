@@ -95,7 +95,7 @@ main {
 
 .projects-title--container > span {
   font-weight: 400;
-  color: #fff;
+  color: wheat; /* #d2bd96 */
   font-size: 1rem;
   border-radius: 5px;
   padding: 1px;
@@ -295,6 +295,7 @@ code.token_reservada.--dateOfImplementation {
 
   .projects-title--container > span {
     font-size: .8rem;
+    color: #d2bd96;
   }
 
   #main-projects--container {
