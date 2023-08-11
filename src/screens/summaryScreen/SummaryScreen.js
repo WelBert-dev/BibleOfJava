@@ -58,8 +58,8 @@ export default function SummaryScreen() {
                                 <h3 className="projects-title">Maratona Java - DevDojo<br/><br/>EM DESENVOLVIMENTO!<br/>(Testando Layouts).</h3>
                                 <a href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java" target="_blank"><i><BsFillFolderSymlinkFill /></i></a>
                             </div>
-                            <span>- Dicionário completo para consultas, desde fundamentos e convenções até a API Nativa.</span>
-                            <span>- 24 Mandamentos (Módulos) que descrevem a estrutura interna do Java ou da JVM, contendo todo o ciclo de vida do Software na perspectiva do Java.</span>
+                            <span>- Dicionário completo para consultas, desde fundamentos, conceitos e convenções até a API Nativa.</span>
+                            <span>- 22 Mandamentos (Módulos) que descrevem a estrutura interna do Java ou da JVM, contendo todo o ciclo de vida do Software na perspectiva do Java.</span>
                             <span>- Transferindo informações do repositório git de estudos correspondente "MaratonaJava-DevDojo" no Github para este Site.</span>
                             <span>- Em desenvolvimento, então ainda possuem páginas vazias ou sem muitas informações (Paciência rsrs).</span>
                             <span>- Caso queira maiores informações ou módulos faltantes, ir no repositório do Projeto correspondente "WelBert-dev/MaratonaJava-DevDojo" no Github, ou clique no botão acima.</span>
