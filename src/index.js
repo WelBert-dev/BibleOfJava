@@ -13,6 +13,7 @@ import StringsAndStringConstantPoolScreen from './screens/stringsAndStringConsta
 import DateTimeAPIScreen from './screens/dateTimeAPIScreen/DateTimeAPIScreen';
 import InternationalizationScreen from './screens/internationalizationScreen/InternationalizationScreen';
 import RegexOrRegexpScreen from './screens/regexOrRegexpScreen/RegexOrRegexpScreen';
+import InputOutputLegacyAPIScreen from './screens/inputOutputLegacyAPIScreen/InputOutputLegacyAPIScreen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,8 +29,8 @@ root.render(
             <Route path="dateTimeAPI" element={<DateTimeAPIScreen />} />
             <Route path="internationalization" element={<InternationalizationScreen />} />
             <Route path="regexOrRegexp" element={<RegexOrRegexpScreen />} />
-            {/* <Route path="inputOutputLegacyAPI" element={<InputOutputLegacyAPIScreen />} />
-            <Route path="newInputOutputAPI" element={<NewInputOutputAPIScreen />} />
+            <Route path="inputOutputLegacyAPI" element={<InputOutputLegacyAPIScreen />} />
+            {/* <Route path="newInputOutputAPI" element={<NewInputOutputAPIScreen />} />
             <Route path="serialization" element={<SerializationScreen />} />
             <Route path="collectionsAPI" element={<CollectionsAPI_DataStructuresScreen />} />
             <Route path="generics" element={<GenericsScreen />} />
