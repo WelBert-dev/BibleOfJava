@@ -603,6 +603,10 @@ export default function MainNavbar() {
                 case 'inputOutputLegacyAPI':
                     ancors[8].classList.add("-ancorOfNavbarIsClicked");
                     break;
+                
+                case 'newInputOutputAPI':
+                    ancors[9].classList.add("-ancorOfNavbarIsClicked");
+                    break;
         
 
                 default: 
@@ -648,9 +652,9 @@ export default function MainNavbar() {
         <a href="/#/dateTimeAPI" rel="Link da API de Data e Tempo" >Date-Time API - Manipulação Temporal</a> 
         <a href="/#/internationalization" rel="Link de Internacionalização" >Internationalization - Polimorfisa Pais</a> 
         <a href="/#/regexOrRegexp" rel="Link de Rex ou Regexp" >Regex ou Regexp - Buscando padrões em textos</a> 
-        <a href="/#/inputOutputLegacyAPI" rel="Link da API legada de IO" >I/O Legacy API - Manipulação de HD</a> 
-          {/* APARTIR DAQUI ESTÀ INCOMPLETO! */}
-        <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/G_nio" rel="Link da API nova de IO" >New I/O API - Manipulação de HD</a> 
+        <a href="/#/inputOutputLegacyAPI" rel="Link da API legada de IO" >I/O Legacy API - Manipulação de Arquivos e Dir</a> 
+        <a href="/#/newInputOutputAPI" rel="Link da API nova de IO" >New I/O API - Manipulação de Arquivos e Dir</a> 
+        {/* APARTIR DAQUI ESTÀ INCOMPLETO! */}
         <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/H_serializacao" rel="Link de Serialização" >Serialization - Fluxo de Bytes entre Camadas</a> 
         <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/I_collections" rel="Link da API de Coleções" >Collections API - Manipulação Data Structures</a> 
         <a target="_blank" href="https://github.com/WelBert-dev/MaratonaJava-DevDojo/tree/main/src/main/java/J_generics" rel="Link de Generics" >Generics - Substituí contextos Object do legacy</a> 
