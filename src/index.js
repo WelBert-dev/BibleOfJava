@@ -15,6 +15,7 @@ import InternationalizationScreen from './screens/internationalizationScreen/Int
 import RegexOrRegexpScreen from './screens/regexOrRegexpScreen/RegexOrRegexpScreen';
 import InputOutputLegacyAPIScreen from './screens/inputOutputLegacyAPIScreen/InputOutputLegacyAPIScreen';
 import NewInputOutputAPIScreen from './screens/newInputOutputAPIScreen/NewInputOutputAPIScreen';
+import SerializationScreen from './screens/serializationScreen/SerializationScreen';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,8 +33,8 @@ root.render(
             <Route path="regexOrRegexp" element={<RegexOrRegexpScreen />} />
             <Route path="inputOutputLegacyAPI" element={<InputOutputLegacyAPIScreen />} />
             <Route path="newInputOutputAPI" element={<NewInputOutputAPIScreen />} />
-            {/* <Route path="serialization" element={<SerializationScreen />} />
-            <Route path="collectionsAPI" element={<CollectionsAPI_DataStructuresScreen />} />
+            <Route path="serialization" element={<SerializationScreen />} />
+            {/* <Route path="collectionsAPI" element={<CollectionsAPI_DataStructuresScreen />} />
             <Route path="generics" element={<GenericsScreen />} />
             <Route path="nestedInnerClass" element={<NestedInnerClassScreen />} />
             <Route path="functionalProgramming" element={<FunctionalProgrammingScreen/>} />
