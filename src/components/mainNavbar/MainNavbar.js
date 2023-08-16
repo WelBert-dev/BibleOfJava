@@ -633,7 +633,7 @@ export default function MainNavbar() {
     return (
 <>
     <nav id="navbar-container" ref={navRef} >
-        <button id="nav-close-btn" className="nav-btn nav-close-btn" ><span className="dateNowInNavbar">{new Date().getDate() < 10 ? "0" + new Date().getDate() : new Date().getDate()}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getMonth() < 10 ? "0" + new Date().getMonth() : new Date().getMonth()}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getFullYear()}</span>
+        <button id="nav-close-btn" className="nav-btn nav-close-btn" ><span className="dateNowInNavbar">{new Date().getDate() < 10 ? "0" + new Date().getDate() : new Date().getDate()}<span className="dateNowInNavbar--separatorBar">/</span>{(new Date().getMonth()+1) < 10 ? "0" + (new Date().getMonth()+1) : (new Date().getMonth()+1)}<span className="dateNowInNavbar--separatorBar">/</span>{new Date().getFullYear()}</span>
             <div className="audioPlayer--container --audioPlayer--container --navBar -minWidthMaxContent">
                 <div className="audioPlayer--controls">
                     <i className="audioPlayer-control--skipPrevious"><IoPlaySkipBackCircle/></i>
