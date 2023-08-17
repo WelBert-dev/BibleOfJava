@@ -61,8 +61,11 @@ export default function SerializationScreen() {
                             <span>- Depois de marcarmos a classe do Objeto com Serializable ou Externalizable, pode-se usar a classe ObjectOutputStream para escrever o objeto em um fluxo de saída, e a classe ObjectInputStream para ler o objeto de volta em sua forma original.</span>
                             <span>- É importante lembrar que a deserialização pode ser afetada por problemas de compatibilidade, pois a estrutura do objeto serializado pode mudar ao longo do tempo, e ao tentar deserializar o objeto anterior em um novo objeto vai ocorrer inconsistências.</span>
                             <span>- Ao deserializar um objeto e reconstruí-lo da maneira convencional o método construtor não será executado, podemos contornar isto instânciando um novo Objeto com `new` e passando os valores do objeto deserializado como argumento para ele, ou executando setters.</span>
+                            <span>- Atributos estáticos não são serializados, pois eles pertencem à classe como um todo e não a instâncias individuais. Esse comportamento decorre do fato de que a serialização ocorre em nível de objeto, enquanto as variáveis estáticas têm apenas uma instância compartilhada por toda a classe, seria REDUNDANTE armazenar o "mesmo" valor para cada Objeto serializado, é mais lógico o fazer separado já que é o mesmo valor para todas instâncias.</span>
                             <span>- Keyword `transient` pode ser utilizada para "flaggar" um atributo de uma classe que desejamos IGNORAR o valor desta variável durante o processo de serialização, isso é util quando esse valor desta variável é facilmente recuperável e não existe a necessidade de armazenar esse estado, ou quando esse atributo é um objeto (Associação) e a classe do mesmo não implementa nenhuma das Interfaces que o torne serializável.</span>
-                           
+                            <span>- Todos os objetos serializados possuem um atributo `psf long serialVersionUID` que serve para versionamento da classe, essa é uma das soluções para os possíveis problemas de incompatibilidade estrutural, aonde o objeto que está sendo deserializado ainda deve ser compatível estruturalmente falando com a antiga classe dele próprio, pois podem ocorrer mudanças dela ao longo do tempo a medida que a classe evoluí.</span>
+                            <span>- Em cenários de Associação por composição, ou seja, quando temos como tipo de atributo sendo objetos (other_class que essa current_class possue forte dependência e acoplamento) e a mesma (other_class) NÃO implemente a interface Serializable ou Externalizable e mesmo assim desejamos incluí-la no processo de serialização, então devemos "flaggar" esse atributo com a keyword "transient" e configurar manualmente o processo de serialização, incluíndo nessa personalização variável-a-variável do objeto da other_class.</span>
+                            
                             <p>Repositório Github clicando no botão acima</p>
                         </div>
                         <div>
@@ -78,7 +81,7 @@ export default function SerializationScreen() {
                                 <li>
                                     <h3 class="projects-subtitle">Contextualizando:</h3>
                                     <ul className="projects-frontend--container">
-                                        <li></li>
+                                        <li>Em desenvolvimento... Completo no github, basta clicar no botão acima no container do titulo do card!</li>
                                     </ul>
                                 </li>
                             </ul>
